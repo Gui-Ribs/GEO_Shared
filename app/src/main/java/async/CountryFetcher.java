@@ -47,7 +47,9 @@ public class CountryFetcher {
                         String flagUri = countryJson.getString("flagImageUri");
                         int numRegions = countryJson.getInt("numRegions");
                         String wikiDataId = countryJson.getString("wikiDataId");
-                        Country country = new Country(code, name, flagUri, numRegions, wikiDataId);
+                        String callingCode = countryJson.getString("callingCode");
+                        String capital = countryJson.getString("capital");
+                        Country country = new Country(code, name, flagUri, numRegions, wikiDataId, callingCode, capital);
 
                         countries.add(country);
 

@@ -124,10 +124,12 @@ public class MainActivity extends AppCompatActivity implements CityFetcher.CityF
             lastSearch = search;
             CountryFetcher countryFetcher = new CountryFetcher(new Handler(countryHandlerThread.getLooper()), this);
             countryFetcher.fetchCountries(search);
-
-
         }
 
+    }
+
+    public void open_brazil(View view) {
+        redirect(this, BrazilActivity.class);
     }
 
     @Override

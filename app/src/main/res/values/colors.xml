@@ -8,7 +8,7 @@
     <color name="main_button">#1D2552</color>
     <color name="main_purple">#1E1D45</color>
     <color name="main_white_transparent">#4AF5F5F5</color>
-
+    <color name="transparent">#0036384C</color>
     <!-- Secondary Colors -->
 
     <color name="secondary_purple">#0F0A2E</color>
