@@ -95,21 +95,20 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/text"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/american"
-                            android:text="@string/user"
-                            android:textColor="@color/main_white"
-                            android:textSize="16sp" />
-
                         <EditText
                             android:layout_marginTop="50dp"
                             android:layout_width="290dp"
-                            android:layout_height="3dp"
-                            android:background="@drawable/text_group"
-                            android:layout_gravity="center"/>
+                            android:layout_height="30dp"
+                            android:hint="USUÁRIO"
+                            android:background="@drawable/ret"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/bebas"
+                            android:textColorHint="@color/main_white_transparent"
+                            android:textSize="20sp"
+                            android:paddingLeft="17dp"
+                            android:textColor="@color/main_white"/>
+
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -118,20 +117,20 @@
                         android:orientation="vertical"
                         android:layout_marginTop="50dp">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/american"
-                            android:text="@string/password"
-                            android:textColor="@color/main_white"
-                            android:textSize="16sp" />
 
                         <EditText
                             android:layout_marginTop="50dp"
                             android:layout_width="290dp"
-                            android:layout_height="3dp"
-                            android:background="@drawable/text_group"
-                            android:layout_gravity="center"/>
+                            android:layout_height="30dp"
+                            android:inputType="textPassword"
+                            android:background="@drawable/ret"
+                            android:layout_gravity="center"
+                            android:hint="PASSWORD"
+                            android:fontFamily="@font/bebas"
+                            android:textColorHint="@color/main_white_transparent"
+                            android:textSize="20sp"
+                            android:paddingLeft="17dp"
+                            android:textColor="@color/main_white"/>
                     </LinearLayout>
                 </LinearLayout>
 

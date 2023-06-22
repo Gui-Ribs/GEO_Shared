@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.PictureDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -14,19 +17,19 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.caverock.androidsvg.SVG;
+import com.caverock.androidsvg.SVGParseException;
 import com.example.geo_shared.R;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
 import java.util.List;
 
 import async.CityFetcher;
 import async.CountryFetcher;
 import model.City;
 import model.Country;
-import response.Connection;
 
 public class MainActivity extends AppCompatActivity implements CityFetcher.CityFetchListener, CountryFetcher.OnCountryFetchListener {
 
@@ -35,6 +38,8 @@ public class MainActivity extends AppCompatActivity implements CityFetcher.CityF
     ImageView  countryFlags;
     EditText search_input;
     CardView viewCountry;
+
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,8 +82,10 @@ public class MainActivity extends AppCompatActivity implements CityFetcher.CityF
             @Override
             public void run() {
                 StringBuilder countryNames = new StringBuilder();
+                StringBuilder flagCountry = new StringBuilder();
                 for (Country country : countries) {
                     countryNames.append(country.getName()).append("\n");
+                    flagCountry.append(country.getFlagImageUri());
                 }
                 countryName.setText(countryNames.toString());
             }
@@ -109,6 +116,8 @@ public class MainActivity extends AppCompatActivity implements CityFetcher.CityF
             lastSearch = search;
             CountryFetcher countryFetcher = new CountryFetcher(new Handler(countryHandlerThread.getLooper()), this);
             countryFetcher.fetchCountries(search);
+
+
         }
 
     }
