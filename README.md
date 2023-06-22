@@ -1,6 +1,8 @@
 # GEO_Shared
 
-<center><img src="https://github.com/Gui-Ribs/GEO_Shared/blob/main/app/src/main/res/drawable-v24/logo.png"/></center>
+<center>
+<img src="https://github.com/Gui-Ribs/GEO_Shared/blob/main/app/src/main/res/drawable-v24/logo.png"/>
+</center>
 
 
 Feito por Guilherme Ribeiro, 3°A Desenvolvimento de sistemas
