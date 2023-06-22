@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements CityFetcher.CityF
     public void search_countries(View v) {
 
         viewCountry.setVisibility(v.VISIBLE);
-        String search = search_input.getText().toString()
+        String search = search_input.getText().toString();
 
         if (!search.equals(lastSearch)) {
             lastSearch = search;
