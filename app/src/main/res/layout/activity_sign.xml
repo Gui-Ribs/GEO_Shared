@@ -98,6 +98,7 @@
 
 
                         <EditText
+                            android:id="@+id/user"
                             android:layout_marginTop="50dp"
                             android:layout_width="290dp"
                             android:layout_height="30dp"
@@ -118,6 +119,7 @@
                         android:layout_marginTop="20dp">
 
                         <EditText
+                            android:id="@+id/password"
                             android:layout_marginTop="50dp"
                             android:layout_width="290dp"
                             android:layout_height="30dp"
@@ -139,6 +141,7 @@
                         android:layout_marginTop="20dp">
 
                         <EditText
+                            android:id="@+id/repassword"
                             android:layout_marginTop="50dp"
                             android:layout_width="290dp"
                             android:layout_height="30dp"
@@ -147,7 +150,8 @@
                             android:textColorHint="@color/main_white_transparent"
                             android:textSize="20sp"
                             android:paddingLeft="17dp"
-                            android:hint="EMAIL"
+                            android:hint="CONFIRM PASSWORD"
+                            android:inputType="textPassword"
                             android:fontFamily="@font/bebas"
                             android:textColor="@color/main_white"/>
                     </LinearLayout>
@@ -171,6 +175,7 @@
             android:layout_height="130dp">
 
             <Button
+                android:onClick="open_logs"
                 android:layout_width="115dp"
                 android:layout_height="35dp"
                 android:background="@drawable/button_gradient"

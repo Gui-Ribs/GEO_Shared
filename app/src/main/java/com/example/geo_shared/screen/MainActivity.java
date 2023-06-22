@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.PictureDrawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -34,7 +35,10 @@ import model.Country;
 public class MainActivity extends AppCompatActivity implements CityFetcher.CityFetchListener, CountryFetcher.OnCountryFetchListener {
 
     private HandlerThread countryHandlerThread, cityHandlerThread;
-    TextView countryName, cityScore;
+    SharedPreferences preferences;
+    private static final String SHARED_MAIN = "Kmain";
+    private static final String SHARED_NAME = "Kname";
+    TextView countryName, text_name;
     ImageView  countryFlags;
     EditText search_input;
     CardView viewCountry;
@@ -68,6 +72,10 @@ public class MainActivity extends AppCompatActivity implements CityFetcher.CityF
         countryFlags = findViewById(R.id.country_image);
         viewCountry = findViewById(R.id.search);
         search_input = findViewById(R.id.input_search);
+        text_name = findViewById(R.id.text_name);
+        preferences = getSharedPreferences(SHARED_MAIN , MODE_PRIVATE);
+        String set_name = preferences.getString(SHARED_NAME, null);
+        text_name.setText(set_name);
     }
 
     public static void redirect(Activity activity, Class Class) {
