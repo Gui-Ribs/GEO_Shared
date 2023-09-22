@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Geo_Shared</string>
+
+
+    <!-- Hall Screen -->
+
+    <string name="title">EFETUE O LOGIN</string>
+    <string name="sign_button">SIGN</string>
+    <string name="login_button">LOGIN</string>
+    <string name="title_bottom">ESQUECEU A SENHA</string>
+
+    <!-- Login Screen -->
+
+    <string name="user">USUÁRIO:</string>
+    <string name="password">SENHA:</string>
+    <string name="email">Email:</string>
+    <string name="sign_up">SIGN-UP</string>
+
+    <!-- Main Screen -->
+
+    <string name="find_country">ENCONTRE PAÍSES</string>
+    <string name="view">View</string>
+    <string name="coutries">PAISES</string>
+    <string name="cities">CIDADES</string>
+    <string name="more">VER MAIS +</string>
+    <string name="search">PESQUISAR POR PAÍSES</string>
+
+    <string name="brazil">BRASIL</string>
+    <string name="china">CHINA</string>
+    <string name="japan">JAPÃO</string>
+    <string name="germany">ALEMANHA</string>
+    <string name="russian">RUSSIA</string>
+
+
+    <string name="sao">SÃO PAULO</string>
+    <string name="pequim">PEQUIM</string>
+    <string name="toquio">TÓQUIO</string>
+    <string name="berlin">BERLIN</string>
+    <string name="moscow">MOSCOW</string>
+
+    <!-- Biomas Screen -->
+    <string name="info">Informações Gerais:</string>
+
+
+</resources>

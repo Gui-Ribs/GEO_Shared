@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main Colors -->
+
+    <color name="main_white">#f5f5f5</color>
+    <color name="main_black">#000</color>
+    <color name="main_button">#1D2552</color>
+    <color name="main_purple">#1E1D45</color>
+    <color name="main_white_transparent">#4AF5F5F5</color>
+    <color name="transparent">#0036384C</color>
+    <!-- Secondary Colors -->
+
+    <color name="secondary_purple">#0F0A2E</color>
+    <color name="secondary_button">#00F0FF</color>
+
+    <!-- Splash Colors -->
+
+    <color name="splash_main">#991A1C40</color>
+    <color name="splash_secondary">#0F102F</color>
+
+    <!-- Hall Colors -->
+
+    <color name="hall_main">#E6171830</color>
+    <color name="hall_secondary">#0F102F</color>
+
+    <!-- Scr_Main Colors -->
+
+    <color name="header_main">#E6151439</color>
+    <color name="header_secondary">#171830</color>
+    <color name="header_gradient_main">#FC1E1D45</color>
+    <color name="header_gradient_secondary">#FC0F0A2E</color>
+
+
+    <!-- Components Colors -->
+
+    <color name="sidebar">#191D3FB5</color>
+    <color name="cards_main">#111034</color>
+    <color name="cards_secondary">#161844</color>
+    <color name="filter">#1D549666</color>
+    <color name="search">#151439</color>
+    <color name="loading_main">#7479A0</color>
+    <color name="loading_version">#36384C</color>
+    <color name="nav_bottom">#2F335A</color>
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:layout_gravity="bottom"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/nav_shape"
+    android:elevation="22dp">
+
+
+    <ImageView
+        android:id="@+id/idPlus"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:onClick="ClickPlus"
+        android:src="@drawable/shapebottom"/>
+
+    <ImageView
+        android:id="@+id/idContinente"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="58dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/baseline_map_24"
+        android:onClick="ClickContinente"/>
+
+    <ImageView
+        android:id="@+id/idCalxcendar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="ClickBioma"
+        android:src="@drawable/baseline_device_thermostat_24" />
+
+    <ImageView
+        android:id="@+id/idMsap"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="58dp"
+        android:onClick="ClickPresidente"
+        android:src="@drawable/baseline_man_24" />
+
+    <ImageView
+        android:id="@+id/idMapsss"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="110dp"
+        android:onClick="ClickProvincia"
+        android:src="@drawable/baseline_zoom_out_map_24" />
+</RelativeLayout>
